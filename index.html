@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-[#FAFDF2]">
-    <header class="bg-[#1A3129] w-[100%] py-[20px] px-[16px]">
+  <body class="bg-[#FAFDF2] transition-all">
+    <header id="top" class="bg-[#1A3129] w-[100%] py-[20px] px-[16px]">
       <div
         class="content lg:w-[1400px] lg:m-auto flex justify-between items-center"
       >
@@ -522,8 +522,12 @@
               includes personalized nutrition coaching, access to our app, meal
               planning assistance, and email support.
             </p>
-            <h1 class="lg:text-[50px] text-[35px] font-black text-[#1A3129] mb-[33px]">
-              $49<span class="lg:text-[18px] text-[16px] font-medium">/month</span>
+            <h1
+              class="lg:text-[50px] text-[35px] font-black text-[#1A3129] mb-[33px]"
+            >
+              $49<span class="lg:text-[18px] text-[16px] font-medium"
+                >/month</span
+              >
             </h1>
             <button
               class="bg-[#CBEA7B] w-full p-[18px] rounded-[8px] font-bold cursor-pointer text-[18px]"
@@ -541,8 +545,12 @@
               the Basic Plan, you'll receive video consultations, priority
               support, and personalized recipe recommendations.
             </p>
-            <h1 class="lg:text-[50px] font-black text-[#1A3129] mb-[33px] text-[35px]">
-              $79<span class="lg:text-[18px] text-[16px] font-medium">/month</span>
+            <h1
+              class="lg:text-[50px] font-black text-[#1A3129] mb-[33px] text-[35px]"
+            >
+              $79<span class="lg:text-[18px] text-[16px] font-medium"
+                >/month</span
+              >
             </h1>
             <button
               class="bg-[#CBEA7B] w-full p-[18px] rounded-[8px] font-bold cursor-pointer text-[18px]"
@@ -560,8 +568,12 @@
               with our Ultimate Plan. Enjoy all the features of the Premium
               Plan, along with 24/7 chat support and exclusive workshops.
             </p>
-            <h1 class="lg:text-[50px] font-black text-[#1A3129] mb-[33px] text-[35px]">
-              $99<span class="lg:text-[18px] text-[16px] font-medium">/month</span>
+            <h1
+              class="lg:text-[50px] font-black text-[#1A3129] mb-[33px] text-[35px]"
+            >
+              $99<span class="lg:text-[18px] text-[16px] font-medium"
+                >/month</span
+              >
             </h1>
             <button
               class="bg-[#CBEA7B] w-full p-[18px] rounded-[8px] font-bold cursor-pointer text-[18px]"
@@ -572,5 +584,93 @@
         </div>
       </div>
     </div>
+    <footer class="bg-[#1A3129] w-[100%] py-[50px] px-[16px]">
+      <div
+        class="content lg:w-[1400px] lg:m-auto flex justify-between items-center"
+      >
+        <a href="">
+          <img src="./assets/Logo.png" alt="" class="logo" />
+        </a>
+        <img src="./assets/Icon.png" class="lg:hidden" class="logo" />
+        <ul class="hidden lg:flex">
+          <li>
+            <a
+              href="#"
+              class="text-[18px] font-semibold mx-[10px] text-white hover:text-[#CBEA7B]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[18px] font-semibold mx-[10px] text-white hover:text-[#CBEA7B]"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[18px] font-semibold mx-[10px] text-white hover:text-[#CBEA7B]"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[18px] font-semibold mx-[10px] text-white hover:text-[#CBEA7B]"
+              >Process</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[18px] font-semibold mx-[10px] text-white hover:text-[#CBEA7B]"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[18px] font-semibold mx-[10px] text-white hover:text-[#CBEA7B]"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[18px] font-semibold mx-[10px] text-white hover:text-[#CBEA7B]"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <li class="list-none">
+          <a
+            href="#top"
+            class="text-[18px] px-[24px] py-[14px] rounded-[8px] font-bold mx-[10px] text-white"
+            >Go To Top</a
+          >
+        </li>
+      </div>
+
+      <section
+        class="info rounded-[8px] text-white mt-[50px] lg:w-[1440px] m-auto flex justify-between items-center bg-[#234338] p-[20px]"
+      >
+        <div class="flex items-center">
+          <a href="#" class="flex items-center mx-[10px]">
+            <img src="./assets/phone.png" alt="" class="mr-[10px]" />
+            +967 7899999999
+          </a>
+          <a href="#" class="flex items-center mx-[10px]">
+            <img src="./assets/email.png" alt="" class="mr-[10px]" />
+            hello@gmail.com
+          </a>
+          <a href="#" class="flex items-center mx-[10px]">
+            <img src="./assets/email.png" alt="" class="mr-[10px]" />
+            hello@gmail.com
+          </a>
+        </div>
+        <p>© 2023 Nutritionist. All rights reserved.</p>
+      </section>
+    </footer>
   </body>
 </html>
