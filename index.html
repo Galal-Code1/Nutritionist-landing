@@ -6,10 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body>
+  <body class="bg-[#FAFDF2]">
     <header class="bg-[#1A3129] w-[100%] py-[20px] px-[16px]">
       <div
-        class="content lg:w-[1200px] lg:m-auto flex justify-between items-center"
+        class="content lg:w-[1400px] lg:m-auto flex justify-between items-center"
       >
         <a href="">
           <img src="./assets/Logo.png" alt="" class="logo" />
@@ -104,7 +104,7 @@
       </div>
     </section>
     <section class="features-section mb-[80px]">
-      <div class="content lg:w-[1200px] lg:m-auto lg:px-0 px-[16px]">
+      <div class="content lg:w-[1400px] lg:m-auto lg:px-0 px-[16px]">
         <div class="text text-center mb-[80px]">
           <h1 class="lg:text-[48px] font-bold mb-[20px]">Features</h1>
           <p class="lg:text-[18px] font-medium">
@@ -214,7 +214,7 @@
     </section>
     <section class="blogs-section">
       <div
-        class="content lg:w-[1200px] w-full m-auto mb-[80px] lg:px-0 px-[16px]"
+        class="content lg:w-[1400px] w-full m-auto mb-[80px] lg:px-0 px-[16px]"
       >
         <div class="text text-center mb-[80px]">
           <h1 class="lg:text-[48px] font-bold">Our Blogs</h1>
@@ -238,15 +238,19 @@
               and improve overall health.
             </p>
             <div
-              class="post flex justify-between items-center bg-white p-[10px]"
+              class="post flex lg:flex-row flex-col justify-between lg:items-center items-end bg-white p-[10px]"
             >
-              <header class="flex items-center">
+              <header class="flex items-center lg:w-max w-full">
                 <div
                   class="img w-[60px] rounded-2xl mr-[15px] h-[60px] bg-red-400"
                 ></div>
                 <div>
-                  <h1 class="text-[18px] font-bold">Emily Johnson</h1>
-                  <h2 class="text-gray-500 font-medium text-[18px]">
+                  <h1 class="lg:text-[18px] text-[16px] font-bold">
+                    Emily Johnson
+                  </h1>
+                  <h2
+                    class="text-gray-500 font-medium lg:text-[16px] text-[14px]"
+                  >
                     23 May 2023 - 5 min read
                   </h2>
                 </div>
@@ -277,9 +281,9 @@
               well-being.
             </p>
             <div
-              class="post flex justify-between items-center bg-white p-[10px]"
+              class="post flex lg:flex-row flex-col justify-between lg:items-center items-end bg-white p-[10px]"
             >
-              <header class="flex items-center">
+              <header class="flex items-center lg:w-max w-full">
                 <div
                   class="img w-[60px] rounded-2xl mr-[15px] h-[60px] bg-red-400"
                 ></div>
@@ -311,12 +315,13 @@
               Carbohydrates, Proteins, and Fats
             </h1>
             <p class="text-[18px] font-medium my-[30px] text-gray-500">
-              Get a comprehensive understanding of macronutrients and their role in your diet for optimal health and weight management.
+              Get a comprehensive understanding of macronutrients and their role
+              in your diet for optimal health and weight management.
             </p>
             <div
-              class="post flex justify-between items-center bg-white p-[10px]"
+              class="post flex lg:flex-row flex-col justify-between lg:items-center items-end bg-white p-[10px]"
             >
-              <header class="flex items-center">
+              <header class="flex items-center lg:w-max w-full">
                 <div
                   class="img w-[60px] rounded-2xl mr-[15px] h-[60px] bg-red-400"
                 ></div>
@@ -352,9 +357,9 @@
               and improve overall health.
             </p>
             <div
-              class="post flex justify-between items-center bg-white p-[10px]"
+              class="post flex lg:flex-row flex-col justify-between lg:items-center items-end bg-white p-[10px]"
             >
-              <header class="flex items-center">
+              <header class="flex items-center lg:w-max w-full">
                 <div
                   class="img w-[60px] rounded-2xl mr-[15px] h-[60px] bg-red-400"
                 ></div>
@@ -376,6 +381,75 @@
                 />
               </footer>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="content lg:w-[1400px] w-full lg:m-auto mb-[80px] px-[16px] lg:px-0">
+        <div class="text mb-[80px] text-center">
+          <h1 class="lg:text-[48px] font-bold text-[28px]">Our Testimonials</h1>
+          <p class="lg:text-[18px] text-[16px] font-medium">
+            Our satisfied clients share their success stories and experiences on
+            their journey to better health and well-being.
+          </p>
+        </div>
+        <div class="cards grid lg:grid-cols-3 gap-[20px] gap-[30px] ">
+          <div class="card bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]">
+            <div class="text bg-white p-[24px] lg:px-[40px]">
+
+              <img src="./assets/Text.png" class="mb-[24px]"  />
+              <p class="lg:text-[18px] font-medium text-[16px] lg:my-[50px]">
+                I can't thank Nutritionist enough for their personalized nutrition
+                coaching. It has completely transformed my approach to food and
+                helped me shed those extra pounds. Highly recommended!
+              </p>
+            </div>
+            <footer class="lg:px-[40px] lg:py-[20px] p-[24px] flex items-center">
+              <div class="img w-[60px] h-[60px] bg-red-200 mr-[10px] rounded-2xl"></div>
+              <h1 class="font-semibold lg:text-[18px]">Jennifer Anderson</h1>
+            </footer>
+          </div>
+          <div class="card hidden lg:block bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]">
+            <div class="text bg-white p-[24px] lg:px-[40px]">
+
+              <img src="./assets/Text.png" class="mb-[24px]"  />
+              <p class="lg:text-[18px] font-medium text-[16px] lg:my-[50px]">
+                I can't thank Nutritionist enough for their personalized nutrition
+                coaching. It has completely transformed my approach to food and
+                helped me shed those extra pounds. Highly recommended!
+              </p>
+            </div>
+            <footer class="lg:p-[20px] lg:px-[40px] p-[24px] flex items-center">
+              <div class="img w-[60px] h-[60px] bg-red-200 mr-[10px] rounded-2xl"></div>
+              <h1 class="font-semibold lg:text-[18px]">Jennifer Anderson</h1>
+            </footer>
+          </div>
+          <div class="card hidden lg:block bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]">
+            <div class="text bg-white p-[24px] lg:px-[40px]">
+
+              <img src="./assets/Text.png" class="mb-[24px]"  />
+              <p class="lg:text-[18px] font-medium text-[16px] lg:my-[50px]">
+                I can't thank Nutritionist enough for their personalized nutrition
+                coaching. It has completely transformed my approach to food and
+                helped me shed those extra pounds. Highly recommended!
+              </p>
+            </div>
+            <footer class="lg:p-[20px] lg:px-[40px] p-[24px] flex items-center">
+              <div class="img w-[60px] h-[60px] bg-red-200 mr-[10px] rounded-2xl"></div>
+              <h1 class="font-semibold lg:text-[18px]">Jennifer Anderson</h1>
+            </footer>
+          </div>
+          <div class="arrow-buttons flex justify-center items-center lg:hidden">
+            <img src="./assets/left-arrow.png" class="bg-[#F6FBE9] mx-[20px] p-[10px] rounded-2xl" >
+            <div class="content w-[100px] flex gap-[5px] items-center">
+              <div class="point w-[18px] h-[18px] bg-red-300 rounded-[50%]"></div>
+              <div class="point w-[18px] h-[18px] bg-red-300 rounded-[50%]"></div>
+              <div class="point w-[18px] h-[18px] bg-red-300 rounded-[50%]"></div>
+              <div class="point w-[18px] h-[18px] bg-red-300 rounded-[50%]"></div>
+              <div class="point w-[18px] h-[18px] bg-red-300 rounded-[50%]"></div>
+            </div>
+            <img src="./assets/right-arrow.png" class="bg-[#F6FBE9] mx-[20px] p-[10px] rounded-2xl">
           </div>
         </div>
       </div>

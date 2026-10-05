@@ -8,9 +8,12 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-200: oklch(88.5% 0.062 18.334);
     --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-green-300: oklch(87.1% 0.15 154.449);
     --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
@@ -174,6 +177,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .static {
     position: static;
   }
@@ -189,8 +195,14 @@
   .mx-\[10px\] {
     margin-inline: 10px;
   }
+  .mx-\[20px\] {
+    margin-inline: 20px;
+  }
   .my-\[30px\] {
     margin-block: 30px;
+  }
+  .my-\[50px\] {
+    margin-block: 50px;
   }
   .mt-\[60px\] {
     margin-top: 60px;
@@ -207,11 +219,17 @@
   .mb-\[24px\] {
     margin-bottom: 24px;
   }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
   .mb-\[40px\] {
     margin-bottom: 40px;
   }
   .mb-\[80px\] {
     margin-bottom: 80px;
+  }
+  .mb-\[300px\] {
+    margin-bottom: 300px;
   }
   .flex {
     display: flex;
@@ -225,8 +243,23 @@
   .table {
     display: table;
   }
+  .h-\[18px\] {
+    height: 18px;
+  }
+  .h-\[20px\] {
+    height: 20px;
+  }
   .h-\[60px\] {
     height: 60px;
+  }
+  .w-0 {
+    width: 0px;
+  }
+  .w-\[18px\] {
+    width: 18px;
+  }
+  .w-\[20px\] {
+    width: 20px;
   }
   .w-\[60px\] {
     width: 60px;
@@ -234,8 +267,17 @@
   .w-\[100\%\] {
     width: 100%;
   }
+  .w-\[100px\] {
+    width: 100px;
+  }
+  .w-\[1200px\] {
+    width: 1200px;
+  }
   .w-full {
     width: 100%;
+  }
+  .w-min {
+    width: min-content;
   }
   .flex-1 {
     flex: 1;
@@ -261,11 +303,35 @@
   .items-center {
     align-items: center;
   }
+  .items-center-safe {
+    align-items: safe center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-\[1\] {
+    gap: 1;
+  }
+  .gap-\[2\] {
+    gap: 2;
+  }
+  .gap-\[2px\] {
+    gap: 2px;
+  }
+  .gap-\[5px\] {
+    gap: 5px;
+  }
+  .gap-\[10px\] {
+    gap: 10px;
   }
   .gap-\[20px\] {
     gap: 20px;
@@ -273,11 +339,20 @@
   .gap-\[30px\] {
     gap: 30px;
   }
+  .gap-x-\[10px\] {
+    column-gap: 10px;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
   .rounded-\[8px\] {
     border-radius: 8px;
+  }
+  .rounded-\[50\%\] {
+    border-radius: 50%;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -313,11 +388,26 @@
   .bg-\[\#F6FBE9\] {
     background-color: #F6FBE9;
   }
+  .bg-\[\#FAFDF2\] {
+    background-color: #FAFDF2;
+  }
   .bg-amber-50 {
     background-color: var(--color-amber-50);
   }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
   .bg-blue-100 {
     background-color: var(--color-blue-100);
+  }
+  .bg-green-300 {
+    background-color: var(--color-green-300);
+  }
+  .bg-red-200 {
+    background-color: var(--color-red-200);
+  }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
   }
   .bg-red-400 {
     background-color: var(--color-red-400);
@@ -330,6 +420,12 @@
   }
   .p-\[10px\] {
     padding: 10px;
+  }
+  .p-\[20px\] {
+    padding: 20px;
+  }
+  .p-\[24px\] {
+    padding: 24px;
   }
   .p-\[40px\] {
     padding: 40px;
@@ -361,11 +457,17 @@
   .text-\[14px\] {
     font-size: 14px;
   }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
   .text-\[18px\] {
     font-size: 18px;
   }
   .text-\[26px\] {
     font-size: 26px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .text-\[38px\] {
     font-size: 38px;
@@ -385,6 +487,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-\[2\] {
+    color: 2;
   }
   .text-black {
     color: var(--color-black);
@@ -408,11 +513,23 @@
     }
   }
   @media (width >= 64rem) {
+    .lg\:visible {
+      visibility: visible;
+    }
     .lg\:m-auto {
       margin: auto;
     }
+    .lg\:my-\[50px\] {
+      margin-block: 50px;
+    }
     .lg\:mt-0 {
       margin-top: 0px;
+    }
+    .lg\:mb-0 {
+      margin-bottom: 0px;
+    }
+    .lg\:block {
+      display: block;
     }
     .lg\:flex {
       display: flex;
@@ -420,14 +537,32 @@
     .lg\:hidden {
       display: none;
     }
+    .lg\:w-0 {
+      width: 0px;
+    }
     .lg\:w-\[1200px\] {
       width: 1200px;
+    }
+    .lg\:w-\[1400px\] {
+      width: 1400px;
+    }
+    .lg\:w-max {
+      width: max-content;
+    }
+    .lg\:w-min {
+      width: min-content;
     }
     .lg\:flex-1 {
       flex: 1;
     }
     .lg\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:flex-row {
+      flex-direction: row;
     }
     .lg\:items-center {
       align-items: center;
@@ -444,11 +579,26 @@
     .lg\:bg-red-300 {
       background-color: var(--color-red-300);
     }
+    .lg\:p-\[20px\] {
+      padding: 20px;
+    }
+    .lg\:p-\[40px\] {
+      padding: 40px;
+    }
     .lg\:px-0 {
       padding-inline: 0px;
     }
+    .lg\:px-\[40px\] {
+      padding-inline: 40px;
+    }
+    .lg\:py-\[20px\] {
+      padding-block: 20px;
+    }
     .lg\:text-start {
       text-align: start;
+    }
+    .lg\:text-\[16px\] {
+      font-size: 16px;
     }
     .lg\:text-\[18px\] {
       font-size: 18px;
@@ -465,6 +615,9 @@
     .lg\:font-medium {
       --tw-font-weight: var(--font-weight-medium);
       font-weight: var(--font-weight-medium);
+    }
+    .lg\:text-\[48\] {
+      color: 48;
     }
   }
 }
