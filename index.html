@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-[#FAFDF2]  lg:bg-red-500 transition-all">
+  <body class="bg-[#FAFDF2]   transition-all">
     <header id="top" class="bg-[#1A3129] w-[100%] py-[20px] px-[16px]">
       <div
         class="content lg:w-[1200px] md:w-full w-full lg:m-auto flex justify-between items-center"
@@ -419,13 +419,13 @@
             their journey to better health and well-being.
           </p>
         </div>
-        <div class="cards grid lg:grid-cols-3 gap-[20px] gap-[30px]">
+        <div class="cards grid lg:grid-cols-3 md:grid-cols-3 gap-[20px] gap-[30px]">
           <div
-            class="card bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
+            class="card md: bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
           >
             <div class="text bg-white p-[24px] lg:px-[40px]">
               <img src="./assets/Text.png" class="mb-[24px]" />
-              <p class="lg:text-[18px] font-medium text-[16px] lg:my-[50px]">
+              <p class="lg:text-[18px] md:text-[14px] font-medium text-[16px] lg:my-[50px]">
                 I can't thank Nutritionist enough for their personalized
                 nutrition coaching. It has completely transformed my approach to
                 food and helped me shed those extra pounds. Highly recommended!
@@ -443,7 +443,7 @@
             </footer>
           </div>
           <div
-            class="card hidden lg:block bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
+            class="card md:block hidden lg:block bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
           >
             <div class="text bg-white p-[24px] lg:px-[40px]">
               <img src="./assets/Text.png" class="mb-[24px]" />
@@ -461,7 +461,7 @@
             </footer>
           </div>
           <div
-            class="card hidden lg:block bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
+            class="card    hidden md:block lg:block bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
           >
             <div class="text bg-white p-[24px] lg:px-[40px]">
               <img src="./assets/Text.png" class="mb-[24px]" />
@@ -478,7 +478,7 @@
               <h1 class="font-semibold lg:text-[18px]">Jennifer Anderson</h1>
             </footer>
           </div>
-          <div class="arrow-buttons flex justify-center items-center lg:hidden">
+          <div class="arrow-buttons flex justify-center items-center md:hidden lg:hidden">
             <img
               src="./assets/left-arrow.png"
               class="bg-[#F6FBE9] mx-[20px] p-[10px] rounded-2xl"
@@ -536,7 +536,7 @@
         <p class="font-bold lg:text-[18px] mt-[14px] mb-[50px] text-center">
           Save 50% on Yearly
         </p>
-        <div class="planning grid lg:grid-cols-3 lg:gap-[30px] gap-[20px]">
+        <div class="planning grid lg:grid-cols-3 md:justify-center md:grid-cols-2 lg:gap-[30px] gap-[20px]">
           <div
             class="plan bg-[#F6FBE9] lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
           >
@@ -565,7 +565,7 @@
             </button>
           </div>
           <div
-            class="plan bg-[#F6FBE9] lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
+            class="plan  bg-[#F6FBE9] lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
           >
             <h1 class="lg:text-[30px] text-[28px] font-bold">Premium Plan</h1>
             <p class="lg:text-[18] font-medium">Up to 50% off on Yearly Plan</p>
@@ -590,7 +590,7 @@
             </button>
           </div>
           <div
-            class="plan bg-[#F6FBE9] lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
+            class="plan bg-[#F6FBE9]   lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
           >
             <h1 class="lg:text-[50px] font-bold text-[28px]">Ultimate Plan</h1>
             <p class="lg:text-[18] font-medium">Up to 50% off on Yearly Plan</p>
@@ -710,5 +710,10 @@
         <p class="flex items-center mx-[10px]   p-[10px]  justify-center">© 2023 Nutritionist. All rights reserved.</p>
       </section>
     </footer>
+    <!-- <div class="divces absolute top-0 left-[50%]">
+      <h1 class="lg:hidden md:hidden block">Mobile</h1>
+      <h1 class="lg:hidden md:block hidden">tablet</h1>
+      <h1 class="lg:block md:hidden hidden">laptop</h1>
+    </div> -->
   </body>
 </html>
