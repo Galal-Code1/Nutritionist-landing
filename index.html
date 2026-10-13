@@ -6,16 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-[#FAFDF2]   transition-all">
-    <header id="top" class="bg-[#1A3129] w-[100%] py-[20px] px-[16px]">
+  <body class="bg-[#FAFDF2] transition-all">
+    <header id="top" class="bg-[#1A3129] w-full py-5 px-[16px]">
       <div
         class="content lg:w-[1200px] md:w-full w-full lg:m-auto flex justify-between items-center"
       >
         <a href="">
           <img src="./assets/Logo.png" alt="" class="logo" />
         </a>
-        <img src="./assets/Icon.png" class="lg:hidden md:hidden" class="logo" />
-        <ul class="hidden lg:flex md:flex">
+        <img
+          src="./assets/Icon.png"
+          class="lg:hidden md:hidden"
+          class="logo"
+          id="menu-bto"
+        />
+        <ul
+          class="hidden absolute lg:relative md:relative right-0 lg:top-0 md:top-0 top-[85px] bg-[#1A3129] rounded-bl-[8px] p-[10px] lg:flex md:flex"
+          id="menus"
+        >
           <li>
             <a
               href="#"
@@ -61,7 +69,7 @@
           <li>
             <a
               href="#"
-              class="md:text-[14px] lg:text-[18px] px-[24px] py-[14px] rounded-[8px] font-bold mx-[10px] text-black bg-[#CBEA7B]"
+              class="hidden md:text-[14px] lg:text-[18px] px-[24px] py-[14px] rounded-[8px] font-bold mx-[10px] text-black bg-[#CBEA7B]"
               >Contact Us</a
             >
           </li>
@@ -69,20 +77,28 @@
       </div>
     </header>
     <section
-      class="hero   lg:flex lg:items-center  lg:justify-between md:flex md:items-start md:justify-center md:gap-[10px] lg:gap-[80px] mb-[80px]"
+      class="hero lg:flex lg:items-center lg:justify-between md:flex md:items-start md:justify-center md:gap-[10px] lg:gap-[80px] mb-[80px]"
     >
-      <img src="./assets/image1.png" class="lg:flex md:flex hidden  md:w-[50%] md:h-full" />
-      <img src="./assets/image-mobile.png" class="lg:hidden md:hidden flex w-full" />
+      <img
+        src="./assets/image1.png"
+        class="lg:flex md:flex hidden md:w-[50%] md:h-full"
+      />
+      <img
+        src="./assets/image-mobile.png"
+        class="lg:hidden md:hidden flex w-full"
+      />
       <div
         class="text lg:text-start md:text-start text-center lg:mt-0 mt-[60px] lg:px-0 px-[16px] lg:flex-1 md:flex-2"
       >
         <h2 class="lg:text-[22px] md:text-[20px] text-[18px] font-semibold">
           Transform Your ❤️ Health with
         </h2>
-        <h1 class="lg:text-[48px] md:text-[30px]  text-[38px] font-black">
+        <h1 class="lg:text-[48px] md:text-[30px] text-[38px] font-black">
           Personalized Nutrition Coaching
         </h1>
-        <p class="lg:text-[18px] md:text-[14px] text-[14px] md:mb-[20px] mb-[40px]">
+        <p
+          class="lg:text-[18px] md:text-[14px] text-[14px] md:mb-[20px] mb-[40px]"
+        >
           Welcome to Nutritionist, your partner in achieving optimal health
           through personalized nutrition coaching. Our certified nutritionists
           are here to guide you on your weight loss journey, providing
@@ -91,12 +107,12 @@
         </p>
         <div class="buttons">
           <button
-            class="px-[16px]  py-[14px] rounded-[8px] lg:text-[18px] md:text-[14px] font-bold bg-[#CBEA7B] border-2 border-[#CBEA7B] cursor-pointer mr-[10px]"
+            class="px-[16px] py-[14px] rounded-[8px] lg:text-[18px] md:text-[14px] font-bold bg-[#CBEA7B] border-2 border-[#CBEA7B] cursor-pointer mr-[10px]"
           >
             Get Starter Today
           </button>
           <button
-            class="px-[16px]  py-[14px] rounded-[8px] lg:text-[18px] md:text-[14px] font-bold border-[#E5F5BD] border-2 cursor-pointer"
+            class="px-[16px] py-[14px] rounded-[8px] lg:text-[18px] md:text-[14px] font-bold border-[#E5F5BD] border-2 cursor-pointer"
           >
             Book a Demo
           </button>
@@ -113,7 +129,9 @@
             destination for all things nutrition and wellness.
           </p>
         </div>
-        <div class="cards grid lg:grid-cols-2 md:grid-cols-2 lg:gap-[30px] gap-[20px]">
+        <div
+          class="cards grid lg:grid-cols-2 md:grid-cols-2 lg:gap-[30px] gap-[20px]"
+        >
           <div
             class="card bg-[#F6FBE9] border-[#E5F5BD] border-2 lg:p-[45px] md:p-[10px] p-[10px] rounded-[8px]"
           >
@@ -225,12 +243,16 @@
             experts. Here's what you can expect from our blog.
           </p>
         </div>
-        <div class="cards grid lg:grid-cols-2 md:grid-cols-2 lg:gap-[30px] gap-[20px]">
+        <div
+          class="cards grid lg:grid-cols-2 md:grid-cols-2 lg:gap-[30px] gap-[20px]"
+        >
           <div
             class="card bg-[#F6FBE9] lg:p-[40px] p-[10px] flex flex-col justify-between rounded-[8px] border-2 border-[#EEF8D3]"
           >
             <img src="./assets/Image (1).png" class="mb-[40px]" />
-            <p class="lg:text-[18px] md:text-[16px] text-[14px] font-medium">Weight Loss</p>
+            <p class="lg:text-[18px] md:text-[16px] text-[14px] font-medium">
+              Weight Loss
+            </p>
             <h1 class="lg:text-[26px] lg:text-[24px] text-[20px] font-semibold">
               The Benefits of Hydration for Weight Loss
             </h1>
@@ -260,10 +282,12 @@
               </header>
               <footer class="flex">
                 <img
+                  id="like-bto1"
                   src="assets/like (1).png"
                   class="mx-[5px] bg-[#F6FBE9] p-[10px] rounded-[8px] cursor-pointer"
                 />
                 <img
+                  id="save-bto1"
                   src="assets/saved.png"
                   class="mx-[5px] bg-[#F6FBE9] p-[10px] rounded-[8px] cursor-pointer"
                 />
@@ -305,10 +329,12 @@
               </header>
               <footer class="flex">
                 <img
+                id="like-bto2"
                   src="assets/like (1).png"
                   class="mx-[5px] bg-[#F6FBE9] p-[10px] rounded-[8px] cursor-pointer"
                 />
                 <img
+                id="save-bto2"
                   src="assets/saved.png"
                   class="mx-[5px] bg-[#F6FBE9] p-[10px] rounded-[8px] cursor-pointer"
                 />
@@ -351,10 +377,12 @@
               </header>
               <footer class="flex">
                 <img
+                id="like-bto3"
                   src="assets/like (1).png"
                   class="mx-[5px] bg-[#F6FBE9] p-[10px] rounded-[8px] cursor-pointer"
                 />
                 <img
+                id="save-bto3"
                   src="assets/saved.png"
                   class="mx-[5px] bg-[#F6FBE9] p-[10px] rounded-[8px] cursor-pointer"
                 />
@@ -395,10 +423,12 @@
               </header>
               <footer class="flex">
                 <img
+                id="like-bto4"
                   src="assets/like (1).png"
                   class="mx-[5px] bg-[#F6FBE9] p-[10px] rounded-[8px] cursor-pointer"
                 />
                 <img
+                id="save-bto4"
                   src="assets/saved.png"
                   class="mx-[5px] bg-[#F6FBE9] p-[10px] rounded-[8px] cursor-pointer"
                 />
@@ -419,13 +449,17 @@
             their journey to better health and well-being.
           </p>
         </div>
-        <div class="cards grid lg:grid-cols-3 md:grid-cols-3 gap-[20px] gap-[30px]">
+        <div
+          class="cards grid lg:grid-cols-3 md:grid-cols-3 gap-[20px] gap-[30px]"
+        >
           <div
             class="card md: bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
           >
             <div class="text bg-white p-[24px] lg:px-[40px]">
               <img src="./assets/Text.png" class="mb-[24px]" />
-              <p class="lg:text-[18px] md:text-[14px] font-medium text-[16px] lg:my-[50px]">
+              <p
+                class="lg:text-[18px] md:text-[14px] font-medium text-[16px] lg:my-[50px]"
+              >
                 I can't thank Nutritionist enough for their personalized
                 nutrition coaching. It has completely transformed my approach to
                 food and helped me shed those extra pounds. Highly recommended!
@@ -461,7 +495,7 @@
             </footer>
           </div>
           <div
-            class="card    hidden md:block lg:block bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
+            class="card hidden md:block lg:block bg-[#F6FBE9] rounded-[8px] border-2 border-[#EEF8D3] overflow-hidden lg:mb-0 mb-[30px]"
           >
             <div class="text bg-white p-[24px] lg:px-[40px]">
               <img src="./assets/Text.png" class="mb-[24px]" />
@@ -478,7 +512,9 @@
               <h1 class="font-semibold lg:text-[18px]">Jennifer Anderson</h1>
             </footer>
           </div>
-          <div class="arrow-buttons flex justify-center items-center md:hidden lg:hidden">
+          <div
+            class="arrow-buttons flex justify-center items-center md:hidden lg:hidden"
+          >
             <img
               src="./assets/left-arrow.png"
               class="bg-[#F6FBE9] mx-[20px] p-[10px] rounded-2xl"
@@ -522,11 +558,13 @@
         <div class="buttons flex justify-center">
           <div class="content rounded-xl border-2 border-green-700 p-[10px]">
             <button
+              id="month-bto"
               class="cursor-pointer bg-green-900 rounded-[8px] py-[10px] px-[24px] font-bold text-white lg:text-[18px]"
             >
               Monthly
             </button>
             <button
+              id="year-bto"
               class="cursor-pointer rounded-[8px] py-[10px] px-[24px] font-bold text-black lg:text-[18px]"
             >
               Yearly
@@ -536,7 +574,9 @@
         <p class="font-bold lg:text-[18px] mt-[14px] mb-[50px] text-center">
           Save 50% on Yearly
         </p>
-        <div class="planning grid lg:grid-cols-3 md:justify-center md:grid-cols-2 lg:gap-[30px] gap-[20px]">
+        <div
+          class="planning grid lg:grid-cols-3 md:justify-center md:grid-cols-2 lg:gap-[30px] gap-[20px]"
+        >
           <div
             class="plan bg-[#F6FBE9] lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
           >
@@ -545,13 +585,14 @@
               Up to 50% off on Yearly Plan
             </p>
             <p
-              class="lg:text-[18] text-[14px] font-medium lg:my-[40px] my-[24px]"
+              class="lg:text-[18px] text-[14px] font-medium lg:my-[40px] my-[24px]"
             >
               Get started on your health journey with our Basic Plan. It
               includes personalized nutrition coaching, access to our app, meal
               planning assistance, and email support.
             </p>
             <h1
+              id="plan-1"
               class="lg:text-[50px] text-[40px] font-black text-[#1A3129] mb-[33px]"
             >
               $49<span class="lg:text-[18px] text-[16px] font-medium"
@@ -565,18 +606,21 @@
             </button>
           </div>
           <div
-            class="plan  bg-[#F6FBE9] lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
+            class="plan bg-[#F6FBE9] lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
           >
             <h1 class="lg:text-[30px] text-[28px] font-bold">Premium Plan</h1>
-            <p class="lg:text-[18] font-medium">Up to 50% off on Yearly Plan</p>
+            <p class="lg:text-[18px] font-medium">
+              Up to 50% off on Yearly Plan
+            </p>
             <p
-              class="lg:text-[18] text-[14px] font-medium lg:my-[40px] my-[24px]"
+              class="lg:text-[18px] text-[14px] font-medium lg:my-[40px] my-[24px]"
             >
               Upgrade to our Premium Plan for enhanced features. In addition to
               the Basic Plan, you'll receive video consultations, priority
               support, and personalized recipe recommendations.
             </p>
             <h1
+              id="plan-2"
               class="lg:text-[50px] font-black text-[#1A3129] mb-[33px] text-[40px]"
             >
               $79<span class="lg:text-[18px] text-[16px] font-medium"
@@ -590,9 +634,9 @@
             </button>
           </div>
           <div
-            class="plan bg-[#F6FBE9]   lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
+            class="plan bg-[#F6FBE9] lg:p-[50px] p-[30px] flex flex-col justify-between border-2 border-[#EEF8D3]"
           >
-            <h1 class="lg:text-[50px] font-bold text-[28px]">Ultimate Plan</h1>
+            <h1 class="lg:text-[30px] text-[28px] font-bold">Ultimate Plan</h1>
             <p class="lg:text-[18] font-medium">Up to 50% off on Yearly Plan</p>
             <p
               class="lg:text-[18] text-[14px] font-medium lg:my-[40px] my-[24px]"
@@ -602,6 +646,7 @@
               Plan, along with 24/7 chat support and exclusive workshops.
             </p>
             <h1
+              id="plan-3"
               class="lg:text-[50px] font-black text-[#1A3129] mb-[33px] text-[40px]"
             >
               $99<span class="lg:text-[18px] text-[16px] font-medium"
@@ -623,9 +668,9 @@
       >
         <a href="" class="flex justify-between items-center">
           <img src="./assets/Logo.png" alt="" class="logo lg:mb-0 mb-[30px]" />
-          <a 
+          <a
             href="#top"
-            class="text-[18px] px-[24px] py-[14px] rounded-[8px] font-bold mx-[10px] text-white lg:hidden "
+            class="text-[18px] px-[24px] py-[14px] rounded-[8px] font-bold mx-[10px] text-white lg:hidden"
             >Go To Top</a
           >
         </a>
@@ -693,27 +738,39 @@
       <section
         class="info rounded-[8px] text-white mt-[50px] lg:w-[1200px] w-full m-auto lg:flex lg:justify-between lg:gap-0 gap-[20px] lg:items-center grid grid-cols-1 bg-[#234338] p-[20px]"
       >
-        <div class="lg:flex  grid grid-cols-1 items-center lg:gap-0 gap-[20px]">
-          <a href="#" class="flex items-center mx-[10px] border-[#2C5446] border-1 p-[10px] rounded-xl justify-center">
+        <div class="lg:flex grid grid-cols-1 items-center lg:gap-0 gap-[20px]">
+          <a
+            href="#"
+            class="flex items-center mx-[10px] border-[#2C5446] border-1 p-[10px] rounded-xl justify-center"
+          >
             <img src="./assets/phone.png" alt="" class="mr-[10px]" />
             +967 7899999999
           </a>
-          <a href="#" class="flex items-center mx-[10px] border-[#2C5446] border-1 p-[10px] rounded-xl justify-center">
+          <a
+            href="#"
+            class="flex items-center mx-[10px] border-[#2C5446] border-1 p-[10px] rounded-xl justify-center"
+          >
             <img src="./assets/email.png" alt="" class="mr-[10px]" />
             hello@gmail.com
           </a>
-          <a href="#" class="flex items-center mx-[10px] border-[#2C5446] border-1 p-[10px] rounded-xl justify-center">
+          <a
+            href="#"
+            class="flex items-center mx-[10px] border-[#2C5446] border-1 p-[10px] rounded-xl justify-center"
+          >
             <img src="./assets/email.png" alt="" class="mr-[10px]" />
             hello@gmail.com
           </a>
         </div>
-        <p class="flex items-center mx-[10px]   p-[10px]  justify-center">© 2023 Nutritionist. All rights reserved.</p>
+        <p class="flex items-center mx-[10px] p-[10px] justify-center">
+          © 2023 Nutritionist. All rights reserved.
+        </p>
       </section>
     </footer>
-    <!-- <div class="divces absolute top-0 left-[50%]">
-      <h1 class="lg:hidden md:hidden block">Mobile</h1>
-      <h1 class="lg:hidden md:block hidden">tablet</h1>
-      <h1 class="lg:block md:hidden hidden">laptop</h1>
-    </div> -->
+    <div class="divces absolute top-0 left-[50%]">
+      <h1 class="lg:hidden md:hidden block text-white text-6xl">Mobile</h1>
+      <h1 class="lg:hidden md:block hidden text-white text-6xl">tablet</h1>
+      <h1 class="lg:block md:hidden hidden text-white text-6xl">laptop</h1>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
